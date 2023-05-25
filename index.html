@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Portal</title>
+  <!-- Add your CSS and JavaScript files here -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main section -->
+  <main>
+    <!-- Job List -->
+    <section>
+      <h2>Job List</h2>
+      <div class="search">
+        <input type="text" placeholder="Search jobs">
+        <button type="button">Search</button>
+      </div>
+      <ul class="job-list">
+        <li>
+          <h3>MERN Developer</h3>
+          <p>Company: ABC Tech Solutions</p>
+          <p>Location: Anywhere</p>
+          <button class="apply-btn">Apply</button>
+          <div class="description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Experience: 2+ years</p>
+          </div>
+        </li>
+        <li>
+          <h3>Python Developer</h3>
+          <p>Company: XYZ Software</p>
+          <p>Location: Remote</p>
+          <button class="apply-btn">Apply</button>
+          <div class="description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Experience: 3+ years</p>
+          </div>
+        </li>
+        <!-- Add more job listings here -->
+      </ul>
+    </section>
+
+    <!-- Apply for Job -->
+    <section>
+      <h2>Apply for Job</h2>
+      <form id="apply-form">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div>
+          <label for="resume">Resume</label>
+          <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        </div>
+        <button type="submit">Apply</button>
+      </form>
+    </section>
+
+    <!-- Previously Applied Jobs -->
+    <section>
+      <h2>Previously Applied Jobs</h2>
+      <ul class="applied-jobs">
+        <li>
+          <h3>MERN Developer</h3>
+          <p>Company: ABC Tech Solutions</p>
+          <p>Application Date: May 15, 2023</p>
+        </li>
+        <li>
+          <h3>Python Developer</h3>
+          <p>Company: XYZ Software</p>
+          <p>Application Date: May 10, 2023</p>
+        </li>
+        <!-- Add more previously applied jobs here -->
+      </ul>
+    </section>
+
+    <!-- FAQs -->
+    <section>
+      <h2>FAQs</h2>
+      <ul class="faq-list">
+        <li>
+          <h3>How do I create a job listing?</h3>
+          <p>To create a job listing, log in to your company account and navigate to the dashboard. Click on the "Create Job" button and fill in the required details such as job title, description, qualifications, and location.</p>
+        </li>
+        <li>
+          <h3>Can I edit my job listing after posting?</h3>
+          <p>Yes, you can edit your job listing after posting. Simply go to the dashboard, locate the job listing you want to edit, and click on the "Edit" button. Make the necessary changes and save your updates.</p>
+        </li>
+        <!-- Add more FAQs here -->
+      </ul>
+    </section>
+
+    <!-- Company Dashboard -->
+    <section>
+      <h2>Company Dashboard</h2>
+      <div class="dashboard">
+        <div class="chart">
+          <!-- Pie Chart of Active/Inactive Jobs -->
+          <canvas id="job-status-chart"></canvas>
+        </div>
+        <div class="chart">
+          <!-- Bar/Line Chart of Jobs Applied by Categories -->
+          <canvas id="job-category-chart"></canvas>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2023 Job Portal. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
